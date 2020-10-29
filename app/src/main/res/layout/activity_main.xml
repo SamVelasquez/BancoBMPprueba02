@@ -21,8 +21,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="353dp"
-        android:layout_height="147dp"
+        android:layout_width="307dp"
+        android:layout_height="165dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -31,7 +31,7 @@
         app:layout_constraintVertical_bias="0.458">
 
         <EditText
-            android:id="@+id/edit1"
+            android:id="@+id/edtNombre"
             android:layout_width="match_parent"
             android:layout_height="69dp"
             android:ems="10"
@@ -39,7 +39,7 @@
             android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/password"
+            android:id="@+id/edtPassword"
             android:layout_width="match_parent"
             android:layout_height="71dp"
             android:ems="10"

@@ -21,8 +21,8 @@
     </ViewFlipper>
 
     <TableLayout
-        android:layout_width="318dp"
-        android:layout_height="107dp"
+        android:layout_width="309dp"
+        android:layout_height="143dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,8 +38,8 @@
 
                 <ImageButton
                     android:id="@+id/imageButton"
-                    android:layout_width="175dp"
-                    android:layout_height="47dp"
+                    android:layout_width="157dp"
+                    android:layout_height="51dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="1.0"
@@ -52,8 +52,9 @@
 
             <ImageButton
                 android:id="@+id/imageButton2"
-                android:layout_width="141dp"
-                android:layout_height="47dp"
+                android:layout_width="147dp"
+                android:layout_height="51dp"
+                android:onClick="prestamos"
                 app:srcCompat="@drawable/dinero_men" />
         </TableRow>
 
@@ -67,13 +68,14 @@
 
                 <ImageButton
                     android:id="@+id/imageButton3"
-                    android:layout_width="174dp"
-                    android:layout_height="61dp"
+                    android:layout_width="134dp"
+                    android:layout_height="56dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.41"
+                    app:layout_constraintHorizontal_bias="0.659"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
                     app:srcCompat="@drawable/secure_men" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
