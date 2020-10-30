@@ -10,11 +10,23 @@ import java.util.ArrayList;
 
 public class Home_act extends AppCompatActivity {
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_act);
+    }
+    public void info(View view){
+        Intent info = new Intent( this, Info_act.class );
+        startActivity(info);
+
+    }
+    public void seguridad (View view ){
+        Intent seguridad = new Intent(this, Seguridad_act.class);
+        startActivity(seguridad);
+    }
+    public void cliente (View view){
+        Intent cliente = new Intent(this,Clientes_act.class);
+        startActivity(cliente);
     }
 
     public void prestamos (View view){
