@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:onClick="crearCliente"
     tools:context=".Clientes_act">
 
     <ImageView
@@ -70,24 +71,28 @@
             android:id="@+id/guardarCliente"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="crearCliente"
             android:text="Guardar Cliente" />
 
         <Button
             android:id="@+id/mostrarCliente"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="mostrarCliente"
             android:text="Mostrar Cliente" />
 
         <Button
             android:id="@+id/eliminarCliente"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="eliminarCliente"
             android:text="Eliminar cliente" />
 
         <Button
             android:id="@+id/actualizarCliente"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="actualizarCliente"
             android:text="Actualizar Cliente" />
     </LinearLayout>
 

@@ -12,7 +12,7 @@ import java.util.ArrayList;
 
 public class Home_act extends AppCompatActivity {
     private ViewFlipper vf;
-    private  int[] imagenes = {R.drawable.a, R.drawable.b,R.drawable.c};
+    private int[] imagenes = {R.drawable.aa, R.drawable.bb, R.drawable.cc};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,7 +20,7 @@ public class Home_act extends AppCompatActivity {
 
         vf = (ViewFlipper) findViewById(R.id.slider);
 
-        for (int i = 0; i < imagenes.length; i++) {
+        for (int i=0; i< imagenes.length; i++){
             flip_imagenes(imagenes[i]);
         }
     }
