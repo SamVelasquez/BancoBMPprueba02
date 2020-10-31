@@ -1,7 +1,7 @@
 package com.example.bancobpm;
 
 import androidx.appcompat.app.AppCompatActivity;
-
+import android.media.Image;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -11,14 +11,14 @@ import android.widget.ViewFlipper;
 import java.util.ArrayList;
 
 public class Home_act extends AppCompatActivity {
-    private ViewFlipper vf;
-    private int[] imagenes = {R.drawable.aa, R.drawable.bb, R.drawable.cc};
+    private ViewFlipper Vf;
+    private int[] imagenes = {R.drawable.banco, R.drawable.manos, R.drawable.personas};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_act);
 
-        vf = (ViewFlipper) findViewById(R.id.slider);
+        Vf = (ViewFlipper) findViewById(R.id.slider);
 
         for (int i=0; i< imagenes.length; i++){
             flip_imagenes(imagenes[i]);
@@ -28,12 +28,12 @@ public class Home_act extends AppCompatActivity {
     public  void flip_imagenes( int i){
         ImageView view = new ImageView(this);
         view.setBackgroundResource(i);
-        vf.addView(view);
-        vf.setFlipInterval(2800);
-        vf.setAutoStart(true);
+        Vf.addView(view);
+        Vf.setFlipInterval(2800);
+        Vf.setAutoStart(true);
 
-        vf.setInAnimation( this, android.R.anim.slide_in_left);
-        vf.setOutAnimation(this, android.R.anim.slide_out_right);
+        Vf.setInAnimation( this, android.R.anim.slide_in_left);
+        Vf.setOutAnimation(this, android.R.anim.slide_out_right);
     }
     public void info(View view){
         Intent info = new Intent( this, Info_act.class );
