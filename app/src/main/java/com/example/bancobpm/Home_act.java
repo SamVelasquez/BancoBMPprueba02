@@ -1,7 +1,7 @@
 package com.example.bancobpm;
 
 import androidx.appcompat.app.AppCompatActivity;
-import android.media.Image;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -14,18 +14,18 @@ public class Home_act extends AppCompatActivity {
     private ViewFlipper Vf;
     private int[] imagenes = {R.drawable.banco, R.drawable.manos, R.drawable.personas};
     @Override
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_act);
-
-        Vf = (ViewFlipper) findViewById(R.id.slider);
+        Vf = (ViewFlipper)findViewById(R.id.slider);
 
         for (int i=0; i< imagenes.length; i++){
-            flip_imagenes(imagenes[i]);
+            flip_images(imagenes[i]);
         }
     }
     //configuracion del slider
-    public  void flip_imagenes( int i){
+    public void flip_images(int i){
         ImageView view = new ImageView(this);
         view.setBackgroundResource(i);
         Vf.addView(view);

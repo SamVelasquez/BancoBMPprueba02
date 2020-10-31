@@ -7,7 +7,23 @@
     android:background="@drawable/bgs"
     tools:context=".Home_act">
 
+    <ViewFlipper
+        android:id="@+id/slider"
+        android:layout_width="279dp"
+        android:layout_height="358dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="38dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.095">
+
+    </ViewFlipper>
+
     <TableLayout
+        android:id="@+id/tableLayout"
         android:layout_width="334dp"
         android:layout_height="199dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -139,21 +155,6 @@
         </TableRow>
 
     </TableLayout>
-
-    <ViewFlipper
-        android:id="@+id/slider"
-        android:layout_width="279dp"
-        android:layout_height="358dp"
-        android:layout_marginStart="38dp"
-        android:layout_marginEnd="38dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.095">
-
-    </ViewFlipper>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
